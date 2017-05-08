@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery in Action, 3rd edition</title>
+		<meta charset="utf-8">
+		<script src="scripts/jquery-3.2.1.js"></script>
+	</head>
+	<body>
+		<p>I'm a paragraph</p>
+		<a href="http://jquery.com/" target="_blank">JQuery Web Site</a><br>
+        <p id="id_description">jquery in action is a book</p>
+        <p>p3</p>
+		<script type="text/javascript">
+			var $allElements = $('*');
+            console.log($allElements);
+            var $desc = $('#id_description');
+            console.log($desc.html());
+            console.log("hello jquery");
+            console.log($('p#id_description').html());
+		</script>
+        <ul class="my_list">
+            <li>
+                <a href="http://jquery.com">jquery supports</a>
+                <ul>
+                    <li><a href="css1">css1</a></li>
+                    <li><a href="css2">css2</a></li>
+                    <li><a href="css3">css3</a></li>
+                    <li><a href="css4">css4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="www.baidu.com.cn">www.baidu.com</a>
+                <ul>
+                    <li><a href="css1">css1</a></li>
+                    <li><a href="css2">css2</a></li>
+                    <li><a href="css3">css3</a></li>
+                    <li><a href="css4">css4</a></li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            console.log($('ul.my_list>li>a').html());
+            console.log($("a[href^='www']").html());
+        </script>
+	</body>
+</html>

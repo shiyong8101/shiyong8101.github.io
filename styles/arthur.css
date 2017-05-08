@@ -1,0 +1,7 @@
+body .as-navbar-fixed-top .container{width:960px}
+body .as-navbar-fixed-top .navbar-inner{border-top:none;background:#05a}
+.as-navbar-fixed-top{position:fixed;right:0;left:0;z-index:1000;margin-bottom:0}
+.as-navbar-fixed-top .navbar-inner{padding-left:0;padding-right:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
+.as-navbar-fixed-top .container{width:960px;position:relative}
+.as-navbar-fixed-top{top:0}
+body.unactived .navbar.as-navbar-fixed-top{top:40px}

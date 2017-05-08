@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>行情中心 - 雪球</title>
+        <link rel="icon" type="image/png" href="https://assets.imedao.com/images/favicon.png">
+        <style>html {display:none}</style>
+        <script>
+			if (self == top) {
+			  document.documentElement.style.display = 'block';
+			} else if (top.location.host !== 'xueqiu.com') {
+			  top.location = self.location;
+			}
+			var WATCH = {};
+			WATCH.appStart = 1493263459443
+			WATCH.pageStart = (new Date()).getTime()
+		</script>
+	<link rel="stylesheet" href="https://assets.imedao.com/style/bootstrap-b864c5.css">
+	<style>
+		body{
+		  padding-top:40px;
+		}
+		/* TODO */
+		.search .dropdown-menu strong{
+		  height:12px;
+		  line-height:12px;
+		}
+	</style>
+        <link rel="apple-touch-icon-precomposed" href="https://assets.imedao.com/images/icon-144.png">
+    </head>
+    <body id="jade-stockList_new" class="isPC isNotMobile isNotPad moz regist-guide">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <h1 id="logo">
+                        <a href="/" title="hello">
+                            <img class="logo-type" src="images/icon.jpg" alt="雪球">
+                            <img src="images/logotype.2015.png" alt="雪球" style="width: 48px;">
+                        </a>
+                    </h1>
+					<div class="search">
+						<form method="get" action="/k">
+							<input id="quick-search" class="typeahead" name="q" autocomplete="off" placeholder="搜索 股票/讨论/用户/组合/群组" type="text">
+						</form>
+						<span class="icon">
+							<i></i>
+						</span>
+					</div>
+					<ul class="nav pull-right account notlogined">
+						<li>
+							<a id="nav-signup-link" class="reg" href="/account/reg">注册</a>
+						</li>
+						<li>
+							<a id="nav-login-link" class="login" href="/">登录</a>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </div>
+		<script src="https://assets.imedao.com/js/bootstrap-6bd6fa.js"></script>
+        <div id="center" class="container">
+            <div class="main">
+                <div style="display:none" class="loading">
+                </div>
+                <div class="wrapper">
+                    <link rel="stylesheet" href="https://assets.imedao.com/style/pages/invest/stocklist-519627.css">
+                    <div class="stocklist-wrapper">
+                        <div class="industry-nav">
+                            <div class="nav-container  recentView">
+                                <div class="first-nav nav0">
+                                    <i></i>
+                                    <span class="name">最近访问2</span>
+                                </div>
+                                <ul class="second-nav">
+                                    <li>暂无访问<i></i></li>
+                                </ul>
+                            </div>
+                            <div class="nav-container ">
+                                <div class="first-nav nav1">
+                                    <i></i>
+                                    <span class="name">概念板块</span>
+                                </div>
+                                <ul class="second-nav">
+                                    <li>
+                                        <i class="list-style"></i>
+                                        <a href="www.baidu.com.cn" title="沪深一览">航母概念</a>
+                                    </li>
+									<li>
+                                        <i class="list-style"></i>
+                                        <a href="www.baidu.com.cn" title="沪深一览">能源概念</a>
+                                    </li>
+									<li>
+                                        <i class="list-style"></i>
+                                        <a href="www.baidu.com.cn" title="沪深一览">核电概念</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-container fold">
+                                <div class="first-nav nav1">
+                                    <i></i>
+                                    <span class="name"></span>
+                                </div>
+                                <ul class="second-nav">
+                                    <li>
+                                        <i class="list-style"></i>
+                                        <a href="www.baidu.com.cn" title="沪深一览">沪深一览</a>
+                                    </li>
+                                </ul>
+                                 <ul class="second-nav">
+                                    <li>
+                                        <i class="list-style"></i>
+                                        <a href="www.baidu.com.cn" title="沪深一览">沪深一览</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-container fold">
+                                <div class="first-nav nav1">
+                                    <i></i>
+                                    <span class="name">核电概念</span>
+                                </div>
+                            </div>
+                        </div>
+						<div class="stocklist-container center-container" style="display: block;">
+							<div id="stockList-header">
+								<div class="stockList-nav">
+									<a href="#" style="font-weight: bold;">行情中心</a>
+									>
+									<span>沪深股市</span>
+									>
+									<span>沪深一览</span>
+								</div>
+								<div class="stockList-pageCount">
+									每页显示：
+									<a class="selected" href="#" data-size="30">30</a>
+									<a href="#" data-size="60">60</a>
+									<a href="#" data-size="90">90</a>
+								</div>
+								<div class="stockList-calendar">
+									<a href="#" target="_blank">财报日历</a>
+								</div>
+							</div>
+							<div id="stockList-filter"></div>
+							<div id="stockList">
+								<div class="tableContainer new-portfolio" style="display: none;"></div>
+								<div class="stockLoading" style="display: block;"></div>
+							</div>
+							<div id="pageList" style="display: none;"> </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div id="footer">
+			<div class="copyright">
+				<a href="/about/faq" target="_blank">常见问题</a>
+				<a href="/about/contact-us" target="_blank">联系方式</a>
+				<a href="/about/jobs" target="_blank">加入我们</a>
+				<a href="https://danjuanapp.com/" target="_blank">蛋卷基金</a>
+				<a href="/about/what-is-xueqiu" target="_blank">关于雪球</a>
+				<a>© 2017 XUEQIU.COM</a>
+				<br>
+				<a href="http://xqimg.imedao.com/14ee3530b118403fee048f5b.png" target="_blank">京ICP证100666号</a>
+				<a href="http://www.miibeian.gov.cn" target="_blank">京ICP备10040543</a>
+				<a>京公网安备11010502026957</a>
+				<a href="http://xqimg.imedao.com/14d52aefd15e8f3fc0ce1fbd.png" target="_blank">证券业协会会员单位(代码817027)</a>
+				<p>风险提示：雪球里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上。</p>
+			</div>
+		</div>
+	</body>
+</html>
